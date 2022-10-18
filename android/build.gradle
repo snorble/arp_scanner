@@ -27,7 +27,7 @@ apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+    buildToolsVersion "30.0.3"
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -48,7 +48,7 @@ android {
 }
 
 dependencies {
-    def room_version = "2.3.0"
+    def room_version = "2.4.3"
     implementation "androidx.room:room-runtime:$room_version"
     annotationProcessor "androidx.room:room-compiler:$room_version"
     kapt "androidx.room:room-compiler:$room_version"
