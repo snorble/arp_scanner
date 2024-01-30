@@ -3,7 +3,7 @@ class Device {
   String? hostname;
   String? mac;
   String? vendor;
-  double time = 0;
+  double? time;
 
   Device(this.ip, this.hostname, this.mac, this.time, this.vendor);
   Device.fromJson(Map<String, dynamic> json)
